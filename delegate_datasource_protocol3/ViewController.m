@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "naofaznada.h"
 
 @interface ViewController ()
 
@@ -16,12 +17,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _naofaznadamesmo = [[naofaznada alloc] init];
+    _naofaznadamesmo.delegate = self;
+    [_naofaznadamesmo imprimeNSLogDaViewController];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)imprimeNSLog {
+    NSLog(@"qualquer texto");
 }
 
 @end

@@ -7,8 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "naofaznadadelegate.h"
+@class naofaznada;
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <naofaznaprotocol, UITableViewDelegate, UITableViewDataSource>
+
+@property naofaznada *naofaznadamesmo;
+-(void)imprimeNSLog;
 
 
 @end
