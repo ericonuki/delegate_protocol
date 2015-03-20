@@ -10,7 +10,7 @@
 #import "naofaznadadelegate.h"
 @class naofaznada;
 
-@interface ViewController : UIViewController <naofaznaprotocol, UITableViewDelegate, UITableViewDataSource>
+@interface ViewController : UIViewController <naofaznaprotocol>
 
 @property naofaznada *naofaznadamesmo;
 -(void)imprimeNSLog;
